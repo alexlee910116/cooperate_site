@@ -1,5 +1,4 @@
 
-/* tag */
 
 * {
     margin: 0;
@@ -47,7 +46,6 @@ li {
     margin-bottom: 50px;
 }
 
-/* class */
 
 .section-title::after {
     content: "";
@@ -77,31 +75,29 @@ li {
     margin: 0 auto;
   }
 
-/* id */
-
-#header {
+.header {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header .inner {
+.header .inner {
     display: flex;
     align-items: center;
 }
 
-#header .inner ul {
+.header .inner .nav-list {
     display: flex;
     align-items: center;
 }
 
-#header .inner li {
+.header .inner li {
     margin-right: 30px;
 }
 
 
-#header .contact {
+.header .contact {
     width: 200px;
     height: 80px;
     line-height: 80px;
@@ -112,40 +108,40 @@ li {
     text-align: center;
   }
 
-#mainvisual {
+.mainvisual {
     margin-bottom: 120px;
 }
 
-#mainvisual img {
+.mainvisual img {
     width: 100%;
     height: calc(100vh - 80px);
     object-fit: cover;
   }
 
-#news {
+.news {
     margin-bottom: 120px;
 }
 
-#news .list {
+.news .list {
     display: flex;
     justify-content: space-between;
 }
 
-#news .list li {
+.news .list li {
     width: calc(100%/3);
     border-right: solid 1px #000;
     padding: 10px 20px;
 }
 
-#news .list li:last-child {
+.news .list li:last-child {
     border-right: none;
     padding-right: 0;
 }
-#news .list li:first-child {
+.news .list li:first-child {
     padding-left: 0;
 }
 
-#news .list li .date-area span {
+.news .list li .date-area span {
     width: 50px;
     height: 20px;
     line-height: 20px;
@@ -157,56 +153,56 @@ li {
     text-align: center;
 }
 
-#about {
+.about {
     display: flex;
     margin-bottom: 120px;
 }
-#about .img {
+.about .img {
     width: 55%;
 }
-#about .img img {
+.about .img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
-#about .text {
+.about .text {
     width: 45%;
     padding: 180px 5% 0 5%;
   }
-#about .text p {
+.about .text p {
     line-height: 2.2;
 }
 
-#business {
+.business {
     margin-bottom: 120px;
 }
 
-#business .flex {
+.business .flex {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
 }
 
-#business .flex .left {
+.business .flex .left {
     width: 46%;
     margin-top: 100px;
 }
 
-#business .flex .right {
+.business .flex .right {
     width: 46%;
 }
 
-#business .flex .item {
+.business .flex .item {
     margin-bottom: 50px;
 }
 
-#business .flex .title {
+.business .flex .title {
     font-weight: bold;
     margin: 0 0 10px 18px;
     position: relative;
 }
 
-#business .flex .title::before {
+.business .flex .title::before {
     content: "";
     width: 8px;
     height: 1px;
@@ -216,14 +212,14 @@ li {
     left: -18px;
 }
 
-#company {
+.company {
     height: 750px;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-#company .text {
+.company .text {
     width: 55%;
     background-color: #fff;
     padding: 100px 8% 100px 6%;
@@ -232,102 +228,101 @@ li {
     left: 0;
 }
 
-#company .img {
+.company .img {
     width: 53%;
     position: absolute;
     top: 115px;
     right: 0;
 }
 
-#company .img img {
+.company .img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-  #company .info {
+.company .info {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-#company .info dt {
+.company .info dt {
     width: 20%;
     margin-top: 10px;
 }
 
-  #company .info dd {
+.company .info dd {
     width: 80%;
     margin-top: 10px;
 }
 
-#company .info .add {
+.company .info .add {
     margin-left: 20%;
 }
 
-#footer .flex {
+.footer .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
 }
 
-#footer .copyright {
+.footer .copyright {
     font-size: 0.625rem;
 }
 
 @media screen and (max-width: 900px) {
-    #header .inner {
+    .header .inner {
         flex-direction: column;
         align-items: flex-start;
     }
-    #header .contact {
+    .header .contact {
         display: none;
       }
-    #about .img img {
+    .about .img img {
         height: 300px;
       }
-    #mainvisual {
+    .mainvisual {
         margin-bottom: 80px;
     }
-    #business {
+    .business {
     margin-bottom: 80px;
     }
-    #business .flex {
+    .business .flex {
         flex-direction: column;
         padding: 0;
     }
-    #business .flex .left {
+    .business .flex .left {
         width: 100%;
         margin: 0 0 30px 0;
     }
-    #business .flex .right {
+    .business .flex .right {
         width: 100%;
     }
-    #business .flex .item {
+    .business .flex .item {
         text-align: center;
         margin-bottom: 30px;
     }
-    #business .flex .title {
+    .business .flex .title {
         text-align: left;
     }
-    #company {
+    .company {
         height: auto;
         flex-direction: column;
         position: static;
     }
-    #company .img {
+    .company .img {
         width: 100%;
         padding: 0;
         position: static;
     }
-    #company .text {
+    .company .text {
         width: 100%;
         padding: 40px 20px;
         margin-bottom: 20px;
         position: static;
     }
-    #footer .flex {
+    .footer .flex {
         flex-direction: column;
         align-items: flex-start;
     }
